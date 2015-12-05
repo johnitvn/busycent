@@ -10,7 +10,7 @@ echo ""
 echo "Clean old version and install"
 sudo rm -rf /usr/share/busycent
 sudo mkdir /usr/share/busycent
-sudo cp /tmp/busycent-master /usr/share/busycent
+sudo cp -r /tmp/busycent-master /usr/share/busycent
 echo ""
 echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
