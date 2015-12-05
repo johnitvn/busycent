@@ -7,11 +7,11 @@ echo ""
 echo "Uncompress busycent package"
 sudo tar -xzvf /tmp/busycent.tar.gz
 echo ""
-echo "Clean old version"
+echo "Clean old version and install"
 sudo rm -rf /usr/share/busycent
 sudo mkdir /usr/share/busycent
-echo "Install"
 sudo cp /tmp/busycent-master /usr/share/busycent
+echo ""
 echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
 sudo ln -s /usr/share/busycent/busycent.sh /usr/bin/busycent
