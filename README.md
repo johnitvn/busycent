@@ -17,5 +17,11 @@ You can select *phpMyAdmin* or *Adminer* as  webbase application for manage *MyS
 Verry easy if you want to install gitlab for VCS, just 1 sec.
 
 
+# Install guide
+
+```
+sudo curl -sS https://raw.githubusercontent.com/johnitvn/busycent/master/installer.sh |  sh
+```
+
 ## Contribute
 You are always welcome to *BusyCen*. Every ones can create a pull request
