@@ -14,6 +14,6 @@ sudo cp -r /tmp/busycent-master/* /usr/share/busycent
 echo ""
 echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
-rm -rf /usr/bin/busycent
+sudo rm -rf /usr/bin/busycent
 sudo ln -s /usr/share/busycent/busycent.sh /usr/bin/busycent
 
