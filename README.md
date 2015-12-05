@@ -4,7 +4,7 @@
 # Install guide
 Just one command line for get *Busycent*
 ```
-sudo curl -sS https://raw.githubusercontent.com/johnitvn/busycent/master/installer.sh |  sh
+curl -sS https://raw.githubusercontent.com/johnitvn/busycent/master/installer.sh |  sh
 ```
 
 ## Main features
