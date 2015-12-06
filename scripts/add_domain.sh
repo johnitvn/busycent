@@ -2,12 +2,14 @@
 `sudo getent group webusr || sudo groupadd webusr`
 
 echo "Please input domain"
+read domain
 if [ -f "/etc/nginx/sites-avaiable/${domain}.conf" ]
 then
         echo "Domain: ${domain} is exist!!"
         exit
 fi
-read domain
+
+
 echo "Please input username"
 read username
 if [ -f "/home/${username}" ]
