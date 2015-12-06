@@ -10,8 +10,10 @@ source ${DIR}/libs/functions.sh
 createMainMenu(){
         echo "1. Install LAMP(All configuration will be override)";
 	echo "2. List avaiable domains";
-	 echo "3. Add domain";
+	echo "3. Add domain";
         echo "4. Enable domain";
+        echo "5. Remove domain";
+        echo "6. Disable domain";
 }
 
 
