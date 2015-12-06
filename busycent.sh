@@ -8,26 +8,33 @@ DIR=$(dirname $0)
 
 createMainMenu(){
 	echo "1. Server Information";
-	echo "2. LEMP Tools"; 
-	echo "3. LAMP Tools";
+	echo "2. Testing Tools"; 
+	echo "3. LEMP Tools"; 
+	echo "4. LAMP Tools";
 	echo "9. Security Tools";
 	
 }
 
 option_1(){
-	sh busyinfo.sh;
+	sh ${DIR}/busyinfo.sh;
 }
 
 option_2(){
-	sh busylemp.sh;
+	sh ${DIR}/busytest.sh;	
 }
 
 option_3(){
-	sh busylamp.sh;
+	sh ${DIR}/busylemp.sh;
+}
+
+option_4(){
+	sh ${DIR}/busylamp.sh;
 }
 
 option_9(){
-	sh busysecurity.sh;	
+	sh ${DIR}/busysecurity.sh;	
 }
+
+
 
 _run
