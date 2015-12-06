@@ -14,4 +14,5 @@ sudo cp -r ~/busycent-master/* /usr/share/busycent
 echo ""
 echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
-sudo export PATH=$PATH:/usr/share/busycent/
+echo export PATH=$PATH:/usr/share/busycent >> ~/.profile
+source ~/.profile
