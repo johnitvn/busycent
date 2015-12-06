@@ -18,7 +18,6 @@ then
 	exit
 fi
 
-
 sudo useradd -g webusr $username
 echo "Please input password"
 sudo passwd $username
@@ -26,7 +25,11 @@ sudo mkdir /home/${username}/logs
 touch /home/${username}/logs/error.log
 touch /home/${username}/logs/access.log
 sudo mkdir /home/${username}/htdocs
+chmod 755 /home/${username}/htdocs
+echo "<?php phpinfo(); ?>" /home/${username}/htdocs/index.php
 sudo chown ${username}:${group} -R /home/${username}
+find /home/${username} -type d -exec chmod 755 {} \;
+find /home/${username} -type f -exec chmod 644 {} \;
 
 sudo wget https://gist.githubusercontent.com/johnitvn/1043a01d8a9705096390/raw/54b1d352339d6277dfbebcd72da4dbac09e6aa4e/phpfpm-pool.conf -O /etc/php-fpm.d/${domain}.conf
 sudo perl -pi -e "s/WWWusernameWWW/${username}/g" /etc/php-fpm.d/${domain}.conf
