@@ -9,10 +9,16 @@ source ${DIR}/libs/functions.sh
 
 createMainMenu(){
         echo "1. Test Network Speed";
+        echo "2. Test Streaming IO Speed";
 }
 
 option_1(){
 	sh ${DIR}/scripts/test_network.sh
+	read
+}
+
+option_1(){
+	sh ${DIR}/scripts/test_streaming_io.sh
 	read
 }
 
