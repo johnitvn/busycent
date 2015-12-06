@@ -12,6 +12,8 @@ createMainMenu(){
 	echo "2. List avaiable domains";
 	echo "3. Add domain";
         echo "4. Enable domain";
+        echo "5. Remove domain";
+        echo "6. Disable domain";
 }
 
 
@@ -34,13 +36,25 @@ option_2(){
 }
 
 option_3(){
-        sh scripts/add_domain.sh
+        sh ${DIR}/scripts/add_domain.sh
         echo "Enter to continue..."
         read
 }
 
 option_4(){
-	sh scripts/enable_domain.sh
+	sh ${DIR}/scripts/enable_domain.sh
+	echo "Enter to continue..."
+        read
+}
+
+option_5(){
+	sh ${DIR}/scripts/remove_domain.sh
+	echo "Enter to continue..."
+        read
+}
+
+option_6(){
+	sh ${DIR}/scripts/disable_domain.sh
 	echo "Enter to continue..."
         read
 }
