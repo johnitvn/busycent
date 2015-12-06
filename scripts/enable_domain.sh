@@ -8,6 +8,6 @@ then
         exit
 fi
 
-ln -s /etc/nginx/sites-avaiable/${domain}.conf /etc/nginx/sites-enable/${domain}.conf
-service nginx restart
+sudo ln -s /etc/nginx/sites-avaiable/${domain}.conf /etc/nginx/sites-enable/${domain}.conf
+sudo service nginx restart
 echo "Done!!!"
