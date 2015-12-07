@@ -2,8 +2,8 @@ echo "Install depends"
 sudo yum install wget nano -y
 echo ""
 echo "Download busycent package"
-rm -rf ~/busycent.tar.gz
-rm -rf ~/busycent-master
+sudo rm -rf ~/busycent.tar.gz
+sudo rm -rf ~/busycent-master
 sudo wget https://github.com/johnitvn/busycent/archive/master.tar.gz -O ~/busycent.tar.gz
 echo ""
 echo "Uncompress busycent package"
