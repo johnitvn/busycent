@@ -16,6 +16,5 @@ echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
 echo export PATH=$PATH:/usr/share/busycent >> ~/.profile
 source ~/.profile
-sudo ln -s /usr/share/busycent/busycent.sh /usr/share/busycent/busycent
 echo ""
 echo "Install done!!!"
