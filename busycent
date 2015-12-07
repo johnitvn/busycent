@@ -11,6 +11,7 @@ createMainMenu(){
 	echo "2. Testing Tools"; 
 	echo "3. LEMP Tools"; 
 	echo "4. LAMP Tools";
+	echo "5. VCS Tools";
 	echo "9. Security Tools";
 	
 }
@@ -29,6 +30,10 @@ option_3(){
 
 option_4(){
 	sh ${DIR}/busylamp.sh;
+}
+
+option_4(){
+	sh ${DIR}/busyvcs.sh;
 }
 
 option_9(){
