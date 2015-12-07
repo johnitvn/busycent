@@ -17,7 +17,7 @@ option_1(){
 	read
 }
 
-option_1(){
+option_2(){
 	sh ${DIR}/scripts/test_streaming_io.sh
 	read
 }
