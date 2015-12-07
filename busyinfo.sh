@@ -4,7 +4,7 @@ VERSION="1.0.0"
 BREADCUM="MAIN MENU > Server Infomation"
 DIR=$(dirname $0)
 
-. ${DIR}libs/gui.sh
+. ${DIR}/libs/gui.sh
 
 createMainMenu(){
 	echo " 1. Information about the CPU Architect"    
