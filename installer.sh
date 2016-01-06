@@ -15,7 +15,7 @@ sudo cp -r ~/busycent-master/* /usr/share/busycent
 echo ""
 echo "Make runable"
 sudo chmod +X /usr/share/busycent/*
-echo export PATH=$PATH:/usr/share/busycent >> ~/.profile
-source ~/.profile
+echo export PATH=$PATH:/usr/share/busycent >> ~/.bash_profile
+source ~/.bash_profile
 echo ""
 echo "Install done!!!"
